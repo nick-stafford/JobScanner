@@ -1,0 +1,30 @@
+# JobScanner Configuration Example
+# Copy to config.yaml and fill in your values
+
+api_keys:
+  groq: "your-groq-api-key"
+  serpapi: "your-serpapi-key"
+
+search:
+  location: "Seattle, WA"
+  radius_miles: 50
+  job_types:
+    - fulltime
+    - contract
+  
+keywords:
+  tier1:
+    - "AI Engineer"
+    - "ML Engineer"
+    - "Solutions Architect"
+  tier2:
+    - "Data Engineer"
+    - "Backend Engineer"
+
+scoring:
+  min_match_threshold: 60
+  prioritize_remote: true
+
+output:
+  cover_letter_dir: "./cover_letters"
+  pdf_template: "professional"
